@@ -1,0 +1,4 @@
+venv/
+.env
+model_weights/model_weights/distilbert-stress-quantized.pt
+model_weights/distilbert-stress-quantized.pt
