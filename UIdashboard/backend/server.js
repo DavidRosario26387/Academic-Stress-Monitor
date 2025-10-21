@@ -4,13 +4,13 @@ const mongoose = require('mongoose');
 require('dotenv').config();
 
 const app = express();
-const port = process.env.PORT || 5000;;
+const port = process.env.PORT || 5000;
 
 app.use(cors());
 app.use(express.json());
 
 // MongoDB connection
-mongoose.connect('mongodb+srv://davidrosario_db_user:fdKIL0ZcLkSS3G1J@stresslogs.qq4rjja.mongodb.net/Hackathon?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log('MongoDB connected'))
     .catch(err => console.error(err));
 
@@ -25,9 +25,7 @@ const StressLogSchema = new mongoose.Schema({
     Stress_Reason: String
 });
 
-// Third argument is collection name
 const StressLog = mongoose.model('StressLog', StressLogSchema, 'Stress_logs');
-
 
 // API routes
 app.get('/api/logs', async (req, res) => {

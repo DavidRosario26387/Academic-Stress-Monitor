@@ -7,9 +7,9 @@ function App() {
 
   useEffect(() => {
     axios
-      .get("https://dashboard-backend-elzh.onrender.com/api/logs")
-      .then((res) => setLogs(res.data))
-      .catch((err) => console.error(err));
+  .get("http://localhost:5000/api/logs")
+  .then((res) => setLogs(res.data))
+  .catch((err) => console.error(err));
   }, []);
 
   // === Metrics ===
