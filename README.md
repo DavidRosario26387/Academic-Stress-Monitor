@@ -86,7 +86,7 @@ npm install
 - Create a .env file with your MongoDB connection:
   
 ```
-MONGO_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net/Hackathon?retryWrites=true&w=majority
+MONGO_URI=<your_mongodb_uri>
 PORT=5000
 ```
 Start the backend server:
