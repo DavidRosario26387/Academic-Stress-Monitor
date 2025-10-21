@@ -116,3 +116,7 @@ Start the frontend:
 npm start
 ```
 - Dashboard opens in your browser at: http://localhost:3000
+
+<img width="1347" height="642" alt="image" src="https://github.com/user-attachments/assets/dcbe97a4-3358-4245-b205-8ddd78f843c6" />
+
+<img width="1345" height="567" alt="image" src="https://github.com/user-attachments/assets/a3ea2fa4-7eb6-432f-9b9d-e7483acc7cb1" />
